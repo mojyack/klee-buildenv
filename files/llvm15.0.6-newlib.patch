@@ -1,0 +1,15 @@
+diff --git a/libcxx/include/__locale b/libcxx/include/__locale
+index 40f9a3ff5..466085511 100644
+--- a/libcxx/include/__locale
++++ b/libcxx/include/__locale
+@@ -549,8 +549,8 @@ public:
+ 
+     _LIBCPP_INLINE_VISIBILITY ctype_base() {}
+ 
+-    static_assert((__regex_word & ~(space | print | cntrl | upper | lower | alpha | digit | punct | xdigit | blank)) == __regex_word,
+-                  "__regex_word can't overlap other bits");
++//    static_assert((__regex_word & ~(space | print | cntrl | upper | lower | alpha | digit | punct | xdigit | blank)) == __regex_word,
++//                  "__regex_word can't overlap other bits");
+ };
+ 
+ template <class _CharT> class _LIBCPP_TEMPLATE_VIS ctype;
